@@ -1,0 +1,39 @@
+extends layout
+block   content
+
+    body
+        div.col.form-group.col-md-12    
+                form.search( style="padding: 15px;" action='/customerList')
+                    div.form-row
+                        div.col-md-8
+                            input.form-control(name='firstName' placeholder="Enter your search term ...")
+                        div.col-md-4
+                            input.btn.btn-dark.btn-block(type="submit")
+
+
+        table
+            thead
+                tr
+                  th( style="padding-left: 40px") First name
+                  th( style="padding-left: 70px") Last name
+                  th( style="padding-left: 70px") Nationality
+                  th( style="padding-left: 70px") ID
+                  th( style="padding-left: 70px") Marital status
+                  th( style="padding-left: 70px") Phone Number
+                  th( style="padding-left: 70px") Date of Birth
+                  th( style="padding-left: 70px") Kind of Vehicle
+                  
+            tbody
+                each customer in customers
+                    tr
+                        td #{customer.fname}
+                        td #{customer.lastName}
+                        td #{customer.nationality}
+                        td #{customer.nin}
+                        td #{customer.status}
+                        ttd #{customer.phoneNumber}
+                        td #{customer.date}
+                        td #{customer.kindOfVehicle}
+                        
+
+                        

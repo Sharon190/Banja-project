@@ -1,0 +1,40 @@
+extends layout
+block content
+   .container
+     .row
+       .col-md-12
+          h1(style="text-align: center;")
+            strong  SALES REGISTER
+          form(action="/sale" method="POST" )
+            .sales
+              label   Name:
+              br
+              input.form-control(type="text" name="fname" placeholder="Enter First name")
+              br
+              label  Password:
+              br
+              input.form-control(type="password" name="password" placeholder="Enter Password")
+              br
+              label  Phone number:
+              br
+              input.form-control(type="text" name="phoneNumber" placeholder="Enter Phone number")
+              br
+              label  Email:
+              br
+              input.form-control(type="email" name="email" placeholder="Enter Email")
+              br
+              label  ID:
+              br
+              input.form-control(type="text" name="nin" placeholder="Enter Email")
+              br
+              label  No of working days:
+              br
+              input.form-control(type="text" name="workingDays" placeholder="No of working days")
+              br
+              label Current Date:
+              br
+              input.form-control(type="date" name="currentDate" placeholder="Enter First name" required)
+              br
+              input#next.btn.btn-primary(type="submit" value="Submit" style=" border-radius: 20rem; width: 200px;")
+              input#next.btn.btn-danger(type="submit" value="Cancel" style=" border-radius: 20rem; width: 200px;")
+          //- script(src="/public/sales.js")

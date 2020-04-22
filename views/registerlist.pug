@@ -1,0 +1,27 @@
+html
+    head
+        title
+    body
+
+        table
+            thead
+                tr
+                  th First name
+                  th Last name
+                  th phone number
+                  th Email
+                  th Password
+                  th Re enter password
+                  th Role  
+
+            tbody
+                each user in users
+                    tr
+                        td #{user.fname}
+                        td #{user.lastName}
+                        td #{user.phoneNumber}
+                        td #{user.email}
+                        td #{user.password}
+                        td #{user.reEnterPassword}
+                        td #{user.role}
+                        

@@ -1,0 +1,21 @@
+extends layout
+    
+block content
+    br
+    br
+    
+
+    .container
+      .row
+        .login-box
+          img.img(src="loginimage.png")
+          h1.h2 SALESLOGIN
+          h1.h1 Login here
+          form(action="/salesLogin" method="POST" name="login" onsubmit="return loginValidation();")
+            p.p Username
+            input.input(type="text" name="username" placeholder="Enter Username")
+            p.p Password
+            input.input(type="password" name="password" placeholder="Enter Password")
+            button.btn.btn-primary(type="submit" style="background: #fb2525; border-radius: 20rem; width: 200px; position: relative; bottom: 5px") Login
+            
+    script(src="../public/login.js")

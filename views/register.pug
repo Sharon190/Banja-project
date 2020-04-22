@@ -1,0 +1,34 @@
+extends layout
+block  content
+    br
+    br
+    .container
+      .row
+        .col-md-12
+            h1(style="text-align: center;")
+              strong ADMIN REGISTER
+            br
+            form(name="registration" action="/adminreg" onsubmit="return registrationformvalidation();" method="POST")
+             .reg
+              label  Fist Name:
+              br
+              input.form-control(type="text" name="fname" placeholder="Enter First name")
+              //- br
+              //- label  Last Name:
+              //- br
+              //- input.form-control(type="text" name="lastName" placeholder="Enter Last name")
+              br
+              label  Phone number:
+              br
+              input.form-control(type="text" name="phoneNumber" placeholder="Enter Phone number")
+              br
+              label  Email:
+              br
+              input.form-control(type="email" name="email" placeholder="Enter Email")
+              br
+              label  Password:
+              br
+              input.form-control(type="password" name="password" placeholder="Enter Password")
+              br
+              input#next.btn.btn-primary(type="submit" value="Submit" name="submit" style=" border-radius: 20rem; width: 200px;")
+            //- script(src="register.js")

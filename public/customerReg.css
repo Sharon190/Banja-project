@@ -1,0 +1,19 @@
+body{
+   margin: 0px;
+    padding: 0px;
+    background-color: #b5bbc8;
+}
+
+.h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.register{
+     background: #fff; 
+    width: 600px;
+    margin: auto;
+    color: black;
+    font-size: 18px;
+    padding: 15px;
+}

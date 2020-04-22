@@ -1,0 +1,49 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="./bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet" href="sales.css")
+    link(rel="stylesheet" href="register.css")
+    link(rel="stylesheet" href="customerReg.css")
+    link(rel="stylesheet" href="login.css")
+    title BB-Banja
+   
+    //
+      <style>
+      html{font-family:sans-serif;color:#333;}
+      body{max-width: 500px;margin: 0 auto;padding: 0 15px;}
+      </style>
+  body
+    .container-fluid(style="background-color:#ffffff;")
+      .row
+        .col-md-12
+          ul(style="float: left;")
+                img(style="height: 30px; width: 30px; position: relative;top: 10px; margin:auto" src="boda img2.PNG")
+          ul(style="float: left;margin-left: 5px;color:#66d533;font-size: 30px;")
+                | BB BANJA
+                 
+          ul(style="float:right; position: relative;top: 15px;")
+            a(href="/adminreg") REGISTER
+          ul(style="float:right; position: relative;top: 15px;")
+            a(href="/admin")  ADMINLOGIN
+          ul(style="float:right; position: relative;top: 15px;")
+            a(href="/") HOME
+          ul(style="float:right; position: relative;top: 15px;")
+            a(href="/salesLogin") SALESLOGIN
+    
+
+    block content
+
+
+    block foot
+
+      div.container-fluid.bg-secondary.mb-4
+        div.card-body.text-center
+          h3.text-white.foot  copyright@shan2020
+    script(src="/js/form-validation.js")
+    script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js")
+    script.
+      window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\\/script>')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" )

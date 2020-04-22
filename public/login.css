@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-color: #b5bbc8;
+    
+    
+}
+
+.login-box{
+    width: 300px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    margin: auto;
+    padding: 30px;
+    padding-bottom: 40px;
+    position: relative;
+    bottom: 15px;
+    
+}
+
+.img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 85px;
+    position: relative;
+    bottom: 50px;
+}
+
+.h1{
+    margin: 0px;
+    text-align: center;
+    font-size: 22px;
+    position: relative;
+    bottom: 20px;
+}
+
+.h2{
+    position: relative;
+    bottom: 25px;
+}
+
+.p{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    position: relative;
+    bottom: 15px;
+}
+
+.input{
+    width: 80%;
+    margin: 10px;
+    position: relative;
+    bottom: 15px;
+}
+

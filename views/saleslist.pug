@@ -1,0 +1,35 @@
+extends layout
+block   content
+    body
+        div.col.form-group.col-md-12    
+                form.search( style="padding: 15px;" action='/saleExecutive')
+                    div.form-row
+                        div.col-md-8
+                            input.form-control(name='fname' placeholder="Enter your search term ...")
+                        div.col-md-4
+                            input.btn.btn-dark.btn-block(type="submit")
+
+        table
+            thead(style="background-color: #aaccee;")
+                tr
+                  th( style="padding-left: 40px") Name
+                  th( style="padding-left: 90px") phone number
+                  th( style="padding-left: 90px") email
+                  th( style="padding-left: 90px") No of working days
+                  th( style="padding-left: 90px") ID
+                  th( style="padding-left: 250px") Current Date
+                  
+                  
+                  
+
+            tbody
+                each sale in sales
+                    tr
+                        td( style="padding-left: 50px") #{sale.fname}
+                        td( style="padding-left: 90px") #{sale.phoneNumber}
+                        td( style="padding-left: 90px") #{sale.email}
+                        td( style="padding-left: 90px") #{sale.workingDays}
+                        td( style="padding-left: 90px") #{sale.nin}
+                        td( style="padding-left: 250px") #{sale.currentDate}
+                        
+                        

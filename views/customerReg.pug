@@ -1,0 +1,108 @@
+extends layout
+block content
+ .container
+   .row
+     .col-md-12
+        body
+          h1.h1
+            strong  CUSTOMER REGISTRATION
+          form#register(method="post" action="" name="customerReg" onsubmit="return customerRegValidation();")
+            .register
+              label  Fist Name:
+              br
+              input.form-control(type="text" name="fname" placeholder="Enter First name")
+              br
+              label  Last Name:
+              br
+              input.form-control(type="text" name="lastName" placeholder="Enter Last name")
+              br
+              label  Nationality:
+              br
+              select.custom-select(id="" name="nationality")
+                option(selected="" value="Default") Country
+                option(value="1") Uganda
+                option(value="2") Kenya
+                option(value="3") Tanzania
+              br
+              br
+              label  ID Number:
+              br
+              input.form-control(type="text" name="nin" placeholder="Enter Nin")
+              br
+              label  Marital Status:
+              br
+              input#married(type="radio" name="status")
+              span  Married
+              input#married(type="radio" name="status")
+              span  Single
+              br
+              br
+              label  Phone number:
+              br
+              input.form-control(type="text" name="phoneNumber" placeholder="Enter phone number")
+              br
+              label  Date of Birth:
+              input.form-control(type="date" name="date" required="")
+              br
+              label  Kind of Vehicle:
+              br
+              select.custom-select(id="" name="kindOfVehicle")
+                option(selected="" value="Default") Vehicle
+                option(value="1") Tuktuks
+                option(value="2") Tricycles
+                option(value="3") Bodabodas
+              br
+              br
+              label  Other Loans:
+              br
+              select.custom-select(id="" name="loans")
+                option(selected="" value="Default") type of loan
+                option(value="1") Short term loans
+                option(value="2") Long term loans
+                option(value="3") Personal
+                option(value="4") None
+              br
+              br
+              label  Down payment:
+              br
+              input.form-control(type="text" name="downpayment" placeholder="Enter down payment")
+              br
+              label  Referee Name:
+              br
+              input.form-control(type="text" name="refereeName" placeholder="Enter Referee Name" required="")
+              br
+              label  Work of referee:
+              br
+              input.form-control(type="text" name="workOfReferee" placeholder="Enter Work of Referee" required="")
+              br
+              label  Referee phone number:
+              br
+              input.form-control(type="text" name="refereePhoneNumber" placeholder="Enter Referee phone number" required="")
+              br
+              label  Referee Date of Birth:
+              br
+              input.form-control(type="date" name="refereeDateofBirth" required="")
+              br
+              label  Current Date :
+              br
+              input.form-control(type="date" name="currentDate" required="")
+              br
+              label  Stage name:
+              br
+              input.form-control(type="text" name="stageNaame" placeholder="Enter Stage name" required="")
+              br
+              label  Local council:
+              br
+              input#lc1(type="radio" name="council")
+              span  LC1
+              input#lc1(type="radio" name="council")
+              span  LC3
+              br
+              br
+              label(for="") Confirmation of couples of document
+              input(type="file")
+              br
+              br
+              input#cancel.btn.btn-primary(type="Reset" value="cancel" style="border-radius: 20rem; width: 200px;")
+              input#submit.btn.btn-primary(type="submit" value="Submit" style="border-radius: 20rem; width: 200px;")
+          script(src="../public/customerReg.js")

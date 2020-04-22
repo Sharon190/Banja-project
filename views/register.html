@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public//bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/register.css">
+    <title>REGISTER FORM</title>
+  </head>
+  <body class="reg">
+    <div style="background-color: #ffffff;" class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <ul>
+              <img src="boda img2.PNG" style="height: 30px; width: 30px; position: relative;top: 10px; margin:auto;" alt="" />
+            </ul>
+            <ul style="color: #66d533; margin: auto;">
+              BB BANJA
+            </ul>
+            <ul style="float:right; position: relative;bottom: 15px;"> <a href="register.htm">REGISTER</a></ul>
+            <ul style="float:right; position: relative;bottom: 15px;" > <a href="login.html"> LOGIN</a></ul>
+            <ul style="float:right; position: relative;bottom: 15px;"> <a href="admin.html">HOME</a> </ul>
+          </div>
+        </div>
+      </div>
+      <br><br>
+        <h1 style="text-align: center;"><strong>REGISTER NOW</strong> </h1>
+        <br>
+      <form style="border: 2px solid #ffffff; padding: 10px; background-color: #ffffff;"  name="registration"  action="/submit" onsubmit="return registrationformvalidation();" method="POST">
+          <label > Fist Name:</label><br>
+          <input type="text" name="fname" class="form-control" placeholder="Enter First name"><br>
+          <label > Last Name:</label><br>
+          <input type="text" name="lastName" class="form-control" placeholder="Enter Last name"><br>
+          <label > Phone number:</label><br>
+          <input type="text" name="phoneNumber" class="form-control" placeholder="Enter Phone number"><br>
+          <label > Email:</label><br>
+          <input type="email" name="email" class="form-control" placeholder="Enter Email"><br>
+          <label > Password:</label><br>
+          <input type="password" name="password" class="form-control"  placeholder="Enter Password"><br>
+          <input type="submit" value="Submit" name="submit" id="next"  class="btn btn-primary" style=" border-radius: 20rem; width: 200px;">
+          
+      </form>
+      </div>
+      
+    
+
+    
+    <script src="register.js"></script>
+  </body>
+</html>

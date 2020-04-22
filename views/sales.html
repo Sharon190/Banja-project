@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Register</title>
+  <link rel="stylesheet" href="../public/sales.css">
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css">
+</head>
+<body onload="document.salesReg.fname">
+  <h1 style="text-align: center;"> <strong> SALES REGISTER</strong> </h1>
+      <form action="" method="POST" name="salesReg" onsubmit="return salesRegValidation" >
+        <div class="sales">
+          <label >  Name:</label><br>
+          <input type="text" name="fname" class="form-control" placeholder="Enter First name"><br>
+          <label > Password:</label><br>
+          <input type="password" name="password" class="form-control"  placeholder="Enter Password"><br>
+          <label > Phone number:</label><br>
+          <input type="text" name="phoneNumber" class="form-control" placeholder="Enter Phone number"><br>
+          <label > Email:</label><br>
+          <input type="email" name="email" class="form-control" placeholder="Enter Email"><br>
+          <label > No of working days:</label><br>
+          <input type="text" name="workingDays" class="form-control" placeholder="No of working days" ><br>
+          <label >Current Date:</label><br>
+          <input type="text" name="currentDate" class="form-control" placeholder="Enter First name" ><br>
+          <input type="submit" value="Submit" id="next"  class="btn btn-primary" style=" border-radius: 20rem; width: 200px;">
+          <input type="submit" value="Cancel" id="next"  class="btn btn-danger" style=" border-radius: 20rem; width: 200px;">
+          
+        </div>
+      </form>
+      <script src="/public/sales.js"></script>
+</body>
+</html>

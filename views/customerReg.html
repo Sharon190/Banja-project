@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>customer Registration</title>
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../public/customerReg.css" />
+    <!-- <link rel="stylesheet" href="../public/CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="../public/banja.css"> -->
+  </head>
+  <body>
+    <h1 class="h1"><strong> CUSTOMER REGISTRATION</strong></h1>
+    <form
+      method="post"
+      action=""
+      id="register"
+      name="customerReg"
+      onsubmit="return customerRegValidation();"
+    >
+      <div class="register">
+        <label> Fist Name:</label><br />
+        <input
+          type="text"
+          name="fname"
+          class="form-control"
+          placeholder="Enter First name"
+        /><br />
+        <label> Last Name:</label><br />
+        <input
+          type="text"
+          name="lastName"
+          class="form-control"
+          placeholder="Enter Last name"
+        /><br />
+        <label> Nationality:</label><br />
+        <select class="custom-select"  id="" name="nationality">
+          <option selected="" value="Default" >Country</option>
+          <option value="1">Uganda</option>
+          <option value="2">Kenya</option>
+          <option value="3">Tanzania</option> </select
+        ><br /><br />
+        <label> ID Number:</label><br />
+        <input
+          type="text"
+          name="nin"
+          class="form-control"
+          placeholder="Enter Nin"
+        /><br />
+        <label> Marital Status:</label><br />
+        <input type="radio" name="status" id="married" /><span
+          >&nbsp;Married</span
+        >
+        <input type="radio" name="status" id="married" /><span
+          >&nbsp;Single</span
+        ><br /><br />
+        <label> Phone number:</label><br />
+        <input
+          type="text"
+          name="phoneNumber"
+          class="form-control"
+          placeholder="Enter phone number"
+        /><br />
+        <label> Date of Birth:</label>
+        <input type="date" name="date" class="form-control" required /><br />
+        <label> Kind of Vehicle:</label><br />
+        <select class="custom-select" id="" name="kindOfVehicle">
+          <option selected="" value="Default">Vehicle</option>
+          <option value="1">Tuktuks</option>
+          <option value="2">Tricycles</option>
+          <option value="3">Bodabodas</option> </select
+        ><br /><br />
+        <label> Other Loans:</label><br />
+        <select class="custom-select" id="" name="loans">
+          <option selected="" value="Default">type of loan</option>
+          <option value="1">Short term loans</option>
+          <option value="2">Long term loans</option>
+          <option value="3">Personal</option>
+          <option value="4">None</option> </select
+        ><br /><br />
+        <label> Down payment:</label><br />
+        <input
+          type="text"
+          name="downpayment"
+          class="form-control"
+          placeholder="Enter down payment"
+        /><br />
+        <label> Referee Name:</label><br />
+        <input
+          type="text"
+          name="refereeName"
+          class="form-control"
+          placeholder="Enter Referee Name"
+          required
+        /><br />
+        <label> Work of referee:</label><br />
+        <input
+          type="text"
+          name="workOfReferee"
+          class="form-control"
+          placeholder="Enter Work of Referee"
+          required
+        /><br />
+        <label> Referee phone number:</label><br />
+        <input
+          type="text"
+          name="refereePhoneNumber"
+          class="form-control"
+          placeholder="Enter Referee phone number"
+          required
+        /><br />
+        <label> Referee Date of Birth:</label><br />
+        <input
+          type="date"
+          name="refereeDateofBirth"
+          class="form-control"
+          required
+        /><br />
+        <label> Current Date :</label><br />
+        <input
+          type="date"
+          name="currentDate"
+          class="form-control"
+          required
+        /><br />
+        <label> Stage name:</label><br />
+        <input
+          type="text"
+          name="stageNaame"
+          class="form-control"
+          placeholder="Enter Stage name"
+          required
+        /><br />
+        <label> Local council:</label><br />
+        <input type="radio" name="council" id="lc1" /><span>&nbsp;LC1</span>
+        <input type="radio" name="council" id="lc1" /><span>&nbsp;LC3</span
+        ><br /><br />
+        <label for="">Confirmation of couples of document</label>
+        <input type="file" >
+        <br /><br>
+        <input
+          type="Reset"
+          value="cancel"
+          id="cancel"
+          class="btn btn-primary"
+          style="border-radius: 20rem; width: 200px;"
+        />
+        <input
+          type="submit"
+          value="Submit"
+          id="submit"
+          class="btn btn-primary"
+          style="border-radius: 20rem; width: 200px;"
+        />
+      </div>
+    </form>
+
+    <script src="../public/customerReg.js"></script>
+  </body>
+</html>
